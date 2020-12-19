@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.2 on win32)" generated="20200324 12:48:59.107" rpa="false">
+<suite id="s1" name="Send Email" source="D:\Coding\Robot\Send_Email">
+<suite id="s1-s1" name="Test" source="D:\Coding\Robot\Send_Email\test.robot">
+<test id="s1-s1-t1" name="Test Send Email">
+<kw name="C Log" library="sentemail">
+<arguments>
+<arg>Log</arg>
+</arguments>
+<status status="PASS" starttime="20200324 12:48:59.161" endtime="20200324 12:48:59.162"></status>
+</kw>
+<kw name="C Log A" library="sentemail">
+<arguments>
+<arg>Log</arg>
+<arg>Test Email</arg>
+</arguments>
+<status status="PASS" starttime="20200324 12:48:59.162" endtime="20200324 12:48:59.162"></status>
+</kw>
+<kw name="C Log Br" library="sentemail">
+<arguments>
+<arg>Log</arg>
+</arguments>
+<status status="PASS" starttime="20200324 12:48:59.163" endtime="20200324 12:48:59.163"></status>
+</kw>
+<kw name="C Log A" library="sentemail">
+<arguments>
+<arg>Log</arg>
+<arg>Work!</arg>
+</arguments>
+<status status="PASS" starttime="20200324 12:48:59.163" endtime="20200324 12:48:59.164"></status>
+</kw>
+<kw name="Sent Email" library="sentemail">
+<arguments>
+<arg>sent.email.2020@gmail.com</arg>
+<arg>freememeskid</arg>
+<arg>sent.email.2020@gmail.com</arg>
+<arg>This is Test Sent Email</arg>
+<arg>Work</arg>
+<arg>./Log.txt</arg>
+</arguments>
+<status status="PASS" starttime="20200324 12:48:59.164" endtime="20200324 12:49:02.681"></status>
+</kw>
+<status status="PASS" starttime="20200324 12:48:59.161" endtime="20200324 12:49:02.683" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200324 12:48:59.128" endtime="20200324 12:49:02.685"></status>
+</suite>
+<status status="PASS" starttime="20200324 12:48:59.109" endtime="20200324 12:49:02.686"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Send Email">Send Email</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Test">Send Email.Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

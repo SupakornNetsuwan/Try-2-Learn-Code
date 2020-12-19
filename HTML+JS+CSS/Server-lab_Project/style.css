@@ -1,0 +1,43 @@
+* {
+	text-align: center;
+}
+
+body {
+    background-color: #23272A;
+}
+
+h1,button {
+    font-family: 'Kanit', sans-serif;
+}
+
+h1 {
+    color: #ecf0f1;
+}
+
+ul{
+    list-style-type: none;
+}
+
+button{
+    font-size:2em;
+    background: #0485ff;
+    border:2px solid #0485ff;
+    color:white;
+}
+
+.BtnMenu{
+	transition: 0.15s;
+}
+
+.BtnMenu:hover{
+    background: #016acc;
+	border-color: #016acc;
+}
+
+center{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

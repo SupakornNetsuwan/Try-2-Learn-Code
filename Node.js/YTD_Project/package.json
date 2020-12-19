@@ -1,0 +1,17 @@
+{
+  "name": "ytd_project",
+  "version": "1.0.0",
+  "description": "Make for WCK2020",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Khemmathiti Wangsaptawee",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "youtube-info": "^1.3.2",
+    "ytdl-core": "^1.0.6"
+  }
+}

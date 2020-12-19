@@ -1,0 +1,1396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.2 on win32)" generated="20200313 14:59:26.205" rpa="false">
+<suite id="s1" name="Aksorn" source="D:\Coding\Robot\Aksorn">
+<suite id="s1-s1" name="Test Form" source="D:\Coding\Robot\Aksorn\test_form.robot">
+<test id="s1-s1-t1" name="เริ่มการทดสอบ">
+<kw name="เข้าเว็ป" library="aksorn_resource">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200313 14:59:26.366" level="INFO">Opening browser 'Firefox' to base url 'https://uat-aksorn.codediva.co.th/career/jobs-application/jobs-10'.</msg>
+<msg timestamp="20200313 14:59:26.367" level="INFO">Firefox driver log is always forced to to: D:\Coding\Robot\Aksorn\Log\geckodriver-6.log</msg>
+<status status="PASS" starttime="20200313 14:59:26.366" endtime="20200313 14:59:32.944"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200313 14:59:32.945" endtime="20200313 14:59:33.214"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" starttime="20200313 14:59:33.214" endtime="20200313 14:59:33.214"></status>
+</kw>
+<status status="PASS" starttime="20200313 14:59:26.366" endtime="20200313 14:59:33.214"></status>
+</kw>
+<status status="PASS" starttime="20200313 14:59:26.365" endtime="20200313 14:59:33.215" critical="yes"></status>
+</test>
+<test id="s1-s1-t2" name="หน้าที่1">
+<kw name="ใส่รูป" library="aksorn_resource">
+<kw name="Choose File" library="SeleniumLibrary">
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[1]/div[3]/div/div/form/div/div/div[1]/div[1]/input</arg>
+<arg>D:\\Coding\\Robot\\Aksorn\\unnamed.jpg</arg>
+</arguments>
+<msg timestamp="20200313 14:59:33.217" level="INFO">Sending D:\Coding\Robot\Aksorn\unnamed.jpg to browser.</msg>
+<status status="PASS" starttime="20200313 14:59:33.217" endtime="20200313 14:59:33.229"></status>
+</kw>
+<status status="PASS" starttime="20200313 14:59:33.216" endtime="20200313 14:59:33.230"></status>
+</kw>
+<kw name="เงินเดือนที่ต้องการ" library="aksorn_resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[1]/div[3]/div/div/form/div/div/div[1]/div[5]/div/div/input</arg>
+<arg>1234</arg>
+</arguments>
+<msg timestamp="20200313 14:59:33.230" level="INFO">Typing text '1234' into text field 'xpath:/html/body/div[1]/div[3]/div/div/form/div/div/div[1]/div[5]/div/div/input'.</msg>
+<status status="PASS" starttime="20200313 14:59:33.230" endtime="20200313 14:59:33.267"></status>
+</kw>
+<status status="PASS" starttime="20200313 14:59:33.230" endtime="20200313 14:59:33.267"></status>
+</kw>
+<kw name="คำนำหน้า" library="aksorn_resource">
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>name:title_th</arg>
+<arg>นาง</arg>
+</arguments>
+<msg timestamp="20200313 14:59:33.268" level="INFO">Selecting options from selection list 'name:title_th' by value นาง.</msg>
+<status status="PASS" starttime="20200313 14:59:33.268" endtime="20200313 14:59:33.501"></status>
+</kw>
+<status status="PASS" starttime="20200313 14:59:33.268" endtime="20200313 14:59:33.501"></status>
+</kw>
+<kw name="ชื่อ" library="aksorn_resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[1]/div[3]/div/div/form/div/div/div[1]/div[8]/div/input</arg>
+<arg>ดดดด</arg>
+</arguments>
+<msg timestamp="20200313 14:59:33.502" level="INFO">Typing text 'ดดดด' into text field 'xpath:/html/body/div[1]/div[3]/div/div/form/div/div/div[1]/div[8]/div/input'.</msg>
+<status status="PASS" starttime="20200313 14:59:33.501" endtime="20200313 14:59:33.526"></status>
+</kw>
+<status status="PASS" starttime="20200313 14:59:33.501" endtime="20200313 14:59:33.526"></status>
+</kw>
+<kw name="นามสกุล" library="aksorn_resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[1]/div[3]/div/div/form/div/div/div[1]/div[9]/div/input</arg>
+<arg>กกกก</arg>
+</arguments>
+<msg timestamp="20200313 14:59:33.526" level="INFO">Typing text 'กกกก' into text field 'xpath:/html/body/div[1]/div[3]/div/div/form/div/div/div[1]/div[9]/div/input'.</msg>
+<status status="PASS" starttime="20200313 14:59:33.526" endtime="20200313 14:59:33.553"></status>
+</kw>
+<status status="PASS" starttime="20200313 14:59:33.526" endtime="20200313 14:59:33.553"></status>
+</kw>
+<kw name="ชื่อเล่น" library="aksorn_resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:nick_name_th</arg>
+<arg>พพพพ</arg>
+</arguments>
+<msg timestamp="20200313 14:59:33.554" level="INFO">Typing text 'พพพพ' into text field 'name:nick_name_th'.</msg>
+<status status="PASS" starttime="20200313 14:59:33.554" endtime="20200313 14:59:33.579"></status>
+</kw>
+<status status="PASS" starttime="20200313 14:59:33.554" endtime="20200313 14:59:33.579"></status>
+</kw>
+<kw name="TITLE" library="aksorn_resource">
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>name:title_en</arg>
+<arg>Mrs.</arg>
+</arguments>
+<msg timestamp="20200313 14:59:33.580" level="INFO">Selecting options from selection list 'name:title_en' by value Mrs..</msg>
+<status status="PASS" starttime="20200313 14:59:33.580" endtime="20200313 14:59:33.809"></status>
+</kw>
+<status status="PASS" starttime="20200313 14:59:33.580" endtime="20200313 14:59:33.809"></status>
+</kw>
+<kw name="NAME" library="aksorn_resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:first_name_en</arg>
+<arg>dddd</arg>
+</arguments>
+<msg timestamp="20200313 14:59:33.809" level="INFO">Typing text 'dddd' into text field 'name:first_name_en'.</msg>
+<status status="PASS" starttime="20200313 14:59:33.809" endtime="20200313 14:59:33.830"></status>
+</kw>
+<status status="PASS" starttime="20200313 14:59:33.809" endtime="20200313 14:59:33.830"></status>
+</kw>
+<kw name="SURNAME" library="aksorn_resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:last_name_en</arg>
+<arg>aaaa</arg>
+</arguments>
+<msg timestamp="20200313 14:59:33.831" level="INFO">Typing text 'aaaa' into text field 'name:last_name_en'.</msg>
+<status status="PASS" starttime="20200313 14:59:33.831" endtime="20200313 14:59:33.859"></status>
+</kw>
+<status status="PASS" starttime="20200313 14:59:33.831" endtime="20200313 14:59:33.859"></status>
+</kw>
+<kw name="NICKNAME" library="aksorn_resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:nick_name_en</arg>
+<arg>pppp</arg>
+</arguments>
+<msg timestamp="20200313 14:59:33.860" level="INFO">Typing text 'pppp' into text field 'name:nick_name_en'.</msg>
+<status status="PASS" starttime="20200313 14:59:33.859" endtime="20200313 14:59:33.883"></status>
+</kw>
+<status status="PASS" starttime="20200313 14:59:33.859" endtime="20200313 14:59:33.883"></status>
+</kw>
+<kw name="วัน/เดือน/ปีเกิด" library="aksorn_resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>name:date_of_birth</arg>
+</arguments>
+<msg timestamp="20200313 14:59:33.884" level="INFO">Clicking element 'name:date_of_birth'.</msg>
+<status status="PASS" starttime="20200313 14:59:33.884" endtime="20200313 14:59:34.151"></status>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[2]/div/div/select[2]</arg>
+<arg>40</arg>
+</arguments>
+<msg timestamp="20200313 14:59:34.152" level="INFO">Selecting options from selection list 'xpath:/html/body/div[2]/div/div/select[2]' by index 40.</msg>
+<status status="PASS" starttime="20200313 14:59:34.151" endtime="20200313 14:59:34.659"></status>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[2]/div/div/select[1]</arg>
+<arg>0</arg>
+</arguments>
+<msg timestamp="20200313 14:59:34.659" level="INFO">Selecting options from selection list 'xpath:/html/body/div[2]/div/div/select[1]' by index 0.</msg>
+<status status="PASS" starttime="20200313 14:59:34.659" endtime="20200313 14:59:34.983"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[2]/table/tbody/tr[4]/td[4]/a</arg>
+</arguments>
+<msg timestamp="20200313 14:59:34.984" level="INFO">Clicking element 'xpath:/html/body/div[2]/table/tbody/tr[4]/td[4]/a'.</msg>
+<status status="PASS" starttime="20200313 14:59:34.984" endtime="20200313 14:59:35.198"></status>
+</kw>
+<status status="PASS" starttime="20200313 14:59:33.884" endtime="20200313 14:59:35.198"></status>
+</kw>
+<kw name="ส่วนสูง/น้ำหนัก" library="aksorn_resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>height</arg>
+<arg>200</arg>
+</arguments>
+<msg timestamp="20200313 14:59:35.198" level="INFO">Typing text '200' into text field 'height'.</msg>
+<status status="PASS" starttime="20200313 14:59:35.198" endtime="20200313 14:59:35.224"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>weight</arg>
+<arg>200</arg>
+</arguments>
+<msg timestamp="20200313 14:59:35.225" level="INFO">Typing text '200' into text field 'weight'.</msg>
+<status status="PASS" starttime="20200313 14:59:35.224" endtime="20200313 14:59:35.250"></status>
+</kw>
+<status status="PASS" starttime="20200313 14:59:35.198" endtime="20200313 14:59:35.250"></status>
+</kw>
+<kw name="สัญชาติ" library="aksorn_resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:nationality</arg>
+<arg>อู่อั่น</arg>
+</arguments>
+<msg timestamp="20200313 14:59:35.251" level="INFO">Typing text 'อู่อั่น' into text field 'name:nationality'.</msg>
+<status status="PASS" starttime="20200313 14:59:35.251" endtime="20200313 14:59:35.276"></status>
+</kw>
+<status status="PASS" starttime="20200313 14:59:35.250" endtime="20200313 14:59:35.276"></status>
+</kw>
+<kw name="บัตรประชาชน" library="aksorn_resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id_card</arg>
+<arg>1234567898765</arg>
+</arguments>
+<msg timestamp="20200313 14:59:35.277" level="INFO">Typing text '1234567898765' into text field 'id_card'.</msg>
+<status status="PASS" starttime="20200313 14:59:35.277" endtime="20200313 14:59:35.314"></status>
+</kw>
+<status status="PASS" starttime="20200313 14:59:35.277" endtime="20200313 14:59:35.314"></status>
+</kw>
+<kw name="อีเมล" library="aksorn_resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:email</arg>
+<arg>qqqqqqqqqqqqqqqq@gmail.com</arg>
+</arguments>
+<msg timestamp="20200313 14:59:35.315" level="INFO">Typing text 'qqqqqqqqqqqqqqqq@gmail.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20200313 14:59:35.315" endtime="20200313 14:59:35.372"></status>
+</kw>
+<status status="PASS" starttime="20200313 14:59:35.314" endtime="20200313 14:59:35.373"></status>
+</kw>
+<kw name="เบอร์โทรศัพท์/มือถือ" library="aksorn_resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>telephone</arg>
+<arg>98765432</arg>
+</arguments>
+<msg timestamp="20200313 14:59:35.373" level="INFO">Typing text '98765432' into text field 'telephone'.</msg>
+<status status="PASS" starttime="20200313 14:59:35.373" endtime="20200313 14:59:35.397"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mobile</arg>
+<arg>987654321</arg>
+</arguments>
+<msg timestamp="20200313 14:59:35.398" level="INFO">Typing text '987654321' into text field 'mobile'.</msg>
+<status status="PASS" starttime="20200313 14:59:35.397" endtime="20200313 14:59:35.434"></status>
+</kw>
+<status status="PASS" starttime="20200313 14:59:35.373" endtime="20200313 14:59:35.434"></status>
+</kw>
+<kw name="ที่อยู่ตามทะเบียนบ้าน" library="aksorn_resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address_house_official_number</arg>
+<arg>550/24</arg>
+</arguments>
+<msg timestamp="20200313 14:59:35.435" level="INFO">Typing text '550/24' into text field 'address_house_official_number'.</msg>
+<status status="PASS" starttime="20200313 14:59:35.435" endtime="20200313 14:59:35.459"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address_house_official_soi</arg>
+<arg>a4</arg>
+</arguments>
+<msg timestamp="20200313 14:59:35.459" level="INFO">Typing text 'a4' into text field 'address_house_official_soi'.</msg>
+<status status="PASS" starttime="20200313 14:59:35.459" endtime="20200313 14:59:35.478"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address_house_official_street</arg>
+<arg>koi</arg>
+</arguments>
+<msg timestamp="20200313 14:59:35.478" level="INFO">Typing text 'koi' into text field 'address_house_official_street'.</msg>
+<status status="PASS" starttime="20200313 14:59:35.478" endtime="20200313 14:59:35.501"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address_house_official_district</arg>
+<arg>the</arg>
+</arguments>
+<msg timestamp="20200313 14:59:35.501" level="INFO">Typing text 'the' into text field 'address_house_official_district'.</msg>
+<status status="PASS" starttime="20200313 14:59:35.501" endtime="20200313 14:59:35.522"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address_house_official_aumphur</arg>
+<arg>ka</arg>
+</arguments>
+<msg timestamp="20200313 14:59:35.523" level="INFO">Typing text 'ka' into text field 'address_house_official_aumphur'.</msg>
+<status status="PASS" starttime="20200313 14:59:35.523" endtime="20200313 14:59:35.542"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address_house_official_province</arg>
+<arg>mo</arg>
+</arguments>
+<msg timestamp="20200313 14:59:35.542" level="INFO">Typing text 'mo' into text field 'address_house_official_province'.</msg>
+<status status="PASS" starttime="20200313 14:59:35.542" endtime="20200313 14:59:35.559"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address_house_official_postalcode</arg>
+<arg>10401</arg>
+</arguments>
+<msg timestamp="20200313 14:59:35.560" level="INFO">Typing text '10401' into text field 'address_house_official_postalcode'.</msg>
+<status status="PASS" starttime="20200313 14:59:35.560" endtime="20200313 14:59:35.588"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address_house_official_country</arg>
+<arg>nice</arg>
+</arguments>
+<msg timestamp="20200313 14:59:35.588" level="INFO">Typing text 'nice' into text field 'address_house_official_country'.</msg>
+<status status="PASS" starttime="20200313 14:59:35.588" endtime="20200313 14:59:35.610"></status>
+</kw>
+<status status="PASS" starttime="20200313 14:59:35.435" endtime="20200313 14:59:35.610"></status>
+</kw>
+<kw name="ที่อยู่ปัจจุบัน" library="aksorn_resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address_house_current_number</arg>
+<arg>550/24</arg>
+</arguments>
+<msg timestamp="20200313 14:59:35.611" level="INFO">Typing text '550/24' into text field 'address_house_current_number'.</msg>
+<status status="PASS" starttime="20200313 14:59:35.611" endtime="20200313 14:59:35.636"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address_house_current_soi</arg>
+<arg>a4</arg>
+</arguments>
+<msg timestamp="20200313 14:59:35.636" level="INFO">Typing text 'a4' into text field 'address_house_current_soi'.</msg>
+<status status="PASS" starttime="20200313 14:59:35.636" endtime="20200313 14:59:35.655"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address_house_current_street</arg>
+<arg>koi</arg>
+</arguments>
+<msg timestamp="20200313 14:59:35.655" level="INFO">Typing text 'koi' into text field 'address_house_current_street'.</msg>
+<status status="PASS" starttime="20200313 14:59:35.655" endtime="20200313 14:59:35.678"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address_house_current_district</arg>
+<arg>the</arg>
+</arguments>
+<msg timestamp="20200313 14:59:35.679" level="INFO">Typing text 'the' into text field 'address_house_current_district'.</msg>
+<status status="PASS" starttime="20200313 14:59:35.679" endtime="20200313 14:59:35.697"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address_house_current_aumphur</arg>
+<arg>ka</arg>
+</arguments>
+<msg timestamp="20200313 14:59:35.698" level="INFO">Typing text 'ka' into text field 'address_house_current_aumphur'.</msg>
+<status status="PASS" starttime="20200313 14:59:35.697" endtime="20200313 14:59:35.717"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address_house_current_province</arg>
+<arg>mo</arg>
+</arguments>
+<msg timestamp="20200313 14:59:35.717" level="INFO">Typing text 'mo' into text field 'address_house_current_province'.</msg>
+<status status="PASS" starttime="20200313 14:59:35.717" endtime="20200313 14:59:35.737"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address_house_current_postalcode</arg>
+<arg>10401</arg>
+</arguments>
+<msg timestamp="20200313 14:59:35.738" level="INFO">Typing text '10401' into text field 'address_house_current_postalcode'.</msg>
+<status status="PASS" starttime="20200313 14:59:35.738" endtime="20200313 14:59:35.761"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address_house_current_country</arg>
+<arg>nice</arg>
+</arguments>
+<msg timestamp="20200313 14:59:35.761" level="INFO">Typing text 'nice' into text field 'address_house_current_country'.</msg>
+<status status="PASS" starttime="20200313 14:59:35.761" endtime="20200313 14:59:35.788"></status>
+</kw>
+<status status="PASS" starttime="20200313 14:59:35.611" endtime="20200313 14:59:35.789"></status>
+</kw>
+<kw name="สื่อสังคมออนไลน์" library="aksorn_resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:line_account</arg>
+<arg>china</arg>
+</arguments>
+<msg timestamp="20200313 14:59:35.789" level="INFO">Typing text 'china' into text field 'name:line_account'.</msg>
+<status status="PASS" starttime="20200313 14:59:35.789" endtime="20200313 14:59:35.812"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:line_hours</arg>
+<arg>000.0001</arg>
+</arguments>
+<msg timestamp="20200313 14:59:35.812" level="INFO">Typing text '000.0001' into text field 'name:line_hours'.</msg>
+<status status="PASS" starttime="20200313 14:59:35.812" endtime="20200313 14:59:35.874"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:fb_account</arg>
+<arg>china</arg>
+</arguments>
+<msg timestamp="20200313 14:59:35.875" level="INFO">Typing text 'china' into text field 'name:fb_account'.</msg>
+<status status="PASS" starttime="20200313 14:59:35.874" endtime="20200313 14:59:35.899"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:fb_hours</arg>
+<arg>000.0001</arg>
+</arguments>
+<msg timestamp="20200313 14:59:35.899" level="INFO">Typing text '000.0001' into text field 'name:fb_hours'.</msg>
+<status status="PASS" starttime="20200313 14:59:35.899" endtime="20200313 14:59:37.712"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:tt_account</arg>
+<arg>china</arg>
+</arguments>
+<msg timestamp="20200313 14:59:37.712" level="INFO">Typing text 'china' into text field 'name:tt_account'.</msg>
+<status status="PASS" starttime="20200313 14:59:37.712" endtime="20200313 14:59:39.141"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:tt_hours</arg>
+<arg>000.0001</arg>
+</arguments>
+<msg timestamp="20200313 14:59:39.141" level="INFO">Typing text '000.0001' into text field 'name:tt_hours'.</msg>
+<status status="PASS" starttime="20200313 14:59:39.141" endtime="20200313 14:59:41.671"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:other_social</arg>
+<arg>Youtube</arg>
+</arguments>
+<msg timestamp="20200313 14:59:41.672" level="INFO">Typing text 'Youtube' into text field 'name:other_social'.</msg>
+<status status="PASS" starttime="20200313 14:59:41.672" endtime="20200313 14:59:42.967"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:other_social_account</arg>
+<arg>china</arg>
+</arguments>
+<msg timestamp="20200313 14:59:42.968" level="INFO">Typing text 'china' into text field 'name:other_social_account'.</msg>
+<status status="PASS" starttime="20200313 14:59:42.967" endtime="20200313 14:59:44.205"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:other_social_hours</arg>
+<arg>000.0001</arg>
+</arguments>
+<msg timestamp="20200313 14:59:44.205" level="INFO">Typing text '000.0001' into text field 'name:other_social_hours'.</msg>
+<status status="PASS" starttime="20200313 14:59:44.205" endtime="20200313 14:59:45.475"></status>
+</kw>
+<status status="PASS" starttime="20200313 14:59:35.789" endtime="20200313 14:59:45.476"></status>
+</kw>
+<kw name="ต่อไป-หน้าที่1" library="aksorn_resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[1]/div[3]/div/div/form/div/div/div[1]/div[44]/div/div</arg>
+</arguments>
+<msg timestamp="20200313 14:59:45.476" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[3]/div/div/form/div/div/div[1]/div[44]/div/div'.</msg>
+<status status="PASS" starttime="20200313 14:59:45.476" endtime="20200313 14:59:47.452"></status>
+</kw>
+<status status="PASS" starttime="20200313 14:59:45.476" endtime="20200313 14:59:47.453"></status>
+</kw>
+<status status="PASS" starttime="20200313 14:59:33.216" endtime="20200313 14:59:47.453" critical="yes"></status>
+</test>
+<test id="s1-s1-t3" name="หน้าที่2">
+<kw name="สถานทางการทหาร" library="aksorn_resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[1]/div[3]/div/div/form/div/div/div[3]/div[1]/div[2]/div[2]/div/div[1]</arg>
+</arguments>
+<msg timestamp="20200313 14:59:47.455" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[3]/div/div/form/div/div/div[3]/div[1]/div[2]/div[2]/div/div[1]'.</msg>
+<status status="PASS" starttime="20200313 14:59:47.455" endtime="20200313 14:59:48.580"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[1]/div[3]/div/div/form/div/div/div[3]/div[1]/div[2]/div[2]/div/div[2]</arg>
+</arguments>
+<msg timestamp="20200313 14:59:48.580" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[3]/div/div/form/div/div/div[3]/div[1]/div[2]/div[2]/div/div[2]'.</msg>
+<status status="PASS" starttime="20200313 14:59:48.580" endtime="20200313 14:59:49.681"></status>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[2]/div/div/select</arg>
+<arg>15</arg>
+</arguments>
+<msg timestamp="20200313 14:59:49.682" level="INFO">Selecting options from selection list 'xpath:/html/body/div[2]/div/div/select' by index 15.</msg>
+<status status="PASS" starttime="20200313 14:59:49.681" endtime="20200313 14:59:51.710"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[2]/table/tbody/tr[3]/td[4]/a</arg>
+</arguments>
+<msg timestamp="20200313 14:59:51.710" level="INFO">Clicking link 'xpath:/html/body/div[2]/table/tbody/tr[3]/td[4]/a'.</msg>
+<status status="PASS" starttime="20200313 14:59:51.710" endtime="20200313 14:59:52.439"></status>
+</kw>
+<status status="PASS" starttime="20200313 14:59:47.455" endtime="20200313 14:59:52.439"></status>
+</kw>
+<kw name="สถานภาพ" library="aksorn_resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[1]/div[3]/div/div/form/div/div/div[3]/div[2]/div[2]/div[2]/div/label</arg>
+</arguments>
+<msg timestamp="20200313 14:59:52.440" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[3]/div/div/form/div/div/div[3]/div[2]/div[2]/div[2]/div/label'.</msg>
+<status status="PASS" starttime="20200313 14:59:52.440" endtime="20200313 14:59:53.583"></status>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>name:spouse_title</arg>
+<arg>นาง / Mrs.</arg>
+</arguments>
+<msg timestamp="20200313 14:59:53.584" level="INFO">Selecting options from selection list 'name:spouse_title' by value นาง / Mrs..</msg>
+<status status="PASS" starttime="20200313 14:59:53.584" endtime="20200313 14:59:54.070"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:spouse_name</arg>
+<arg>gg</arg>
+</arguments>
+<msg timestamp="20200313 14:59:54.071" level="INFO">Typing text 'gg' into text field 'name:spouse_name'.</msg>
+<status status="PASS" starttime="20200313 14:59:54.071" endtime="20200313 14:59:54.196"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:spouse_lastname</arg>
+<arg>bb</arg>
+</arguments>
+<msg timestamp="20200313 14:59:54.197" level="INFO">Typing text 'bb' into text field 'name:spouse_lastname'.</msg>
+<status status="PASS" starttime="20200313 14:59:54.197" endtime="20200313 14:59:56.511"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:spouse_office</arg>
+<arg>gg company</arg>
+</arguments>
+<msg timestamp="20200313 14:59:56.511" level="INFO">Typing text 'gg company' into text field 'name:spouse_office'.</msg>
+<status status="PASS" starttime="20200313 14:59:56.511" endtime="20200313 14:59:56.652"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:spouse_position</arg>
+<arg>hr</arg>
+</arguments>
+<msg timestamp="20200313 14:59:56.653" level="INFO">Typing text 'hr' into text field 'name:spouse_position'.</msg>
+<status status="PASS" starttime="20200313 14:59:56.653" endtime="20200313 14:59:58.102"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:spouse_email</arg>
+<arg>gg@gmail.com</arg>
+</arguments>
+<msg timestamp="20200313 14:59:58.102" level="INFO">Typing text 'gg@gmail.com' into text field 'name:spouse_email'.</msg>
+<status status="PASS" starttime="20200313 14:59:58.102" endtime="20200313 14:59:59.534"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:spouse_telephone</arg>
+<arg>011111111</arg>
+</arguments>
+<msg timestamp="20200313 14:59:59.535" level="INFO">Typing text '011111111' into text field 'name:spouse_telephone'.</msg>
+<status status="PASS" starttime="20200313 14:59:59.534" endtime="20200313 15:00:02.100"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:mobispouse_mobilele</arg>
+<arg>0987654321</arg>
+</arguments>
+<msg timestamp="20200313 15:00:02.100" level="INFO">Typing text '0987654321' into text field 'name:mobispouse_mobilele'.</msg>
+<status status="PASS" starttime="20200313 15:00:02.100" endtime="20200313 15:00:03.435"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:spouse_address</arg>
+<arg>fbbhfhfhfjfjfjjfjf</arg>
+</arguments>
+<msg timestamp="20200313 15:00:03.436" level="INFO">Typing text 'fbbhfhfhfjfjfjjfjf' into text field 'name:spouse_address'.</msg>
+<status status="PASS" starttime="20200313 15:00:03.436" endtime="20200313 15:00:03.594"></status>
+</kw>
+<status status="PASS" starttime="20200313 14:59:52.440" endtime="20200313 15:00:03.594"></status>
+</kw>
+<kw name="จำนวนบุตร" library="aksorn_resource">
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>name:number_of_children</arg>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200313 15:00:03.595" level="INFO">Selecting options from selection list 'name:number_of_children' by value 2.</msg>
+<status status="PASS" starttime="20200313 15:00:03.595" endtime="20200313 15:00:05.149"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:number_of_son</arg>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200313 15:00:05.150" level="INFO">Typing text '1' into text field 'name:number_of_son'.</msg>
+<status status="PASS" starttime="20200313 15:00:05.149" endtime="20200313 15:00:05.287"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:number_of_daughter</arg>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200313 15:00:05.287" level="INFO">Typing text '1' into text field 'name:number_of_daughter'.</msg>
+<status status="PASS" starttime="20200313 15:00:05.287" endtime="20200313 15:00:08.253"></status>
+</kw>
+<status status="PASS" starttime="20200313 15:00:03.595" endtime="20200313 15:00:08.253"></status>
+</kw>
+<kw name="บุตรคนที่1" library="aksorn_resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>young_name1</arg>
+<arg>q</arg>
+</arguments>
+<msg timestamp="20200313 15:00:08.254" level="INFO">Typing text 'q' into text field 'young_name1'.</msg>
+<status status="PASS" starttime="20200313 15:00:08.253" endtime="20200313 15:00:08.370"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>young_lastname1</arg>
+<arg>w</arg>
+</arguments>
+<msg timestamp="20200313 15:00:08.370" level="INFO">Typing text 'w' into text field 'young_lastname1'.</msg>
+<status status="PASS" starttime="20200313 15:00:08.370" endtime="20200313 15:00:09.933"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>young_born_1</arg>
+</arguments>
+<msg timestamp="20200313 15:00:09.934" level="INFO">Clicking element 'young_born_1'.</msg>
+<status status="PASS" starttime="20200313 15:00:09.933" endtime="20200313 15:00:13.257"></status>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[2]/div/div/select[2]</arg>
+<arg>50</arg>
+</arguments>
+<msg timestamp="20200313 15:00:13.257" level="INFO">Selecting options from selection list 'xpath:/html/body/div[2]/div/div/select[2]' by index 50.</msg>
+<status status="PASS" starttime="20200313 15:00:13.257" endtime="20200313 15:00:17.852"></status>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[2]/div/div/select[1]</arg>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200313 15:00:17.852" level="INFO">Selecting options from selection list 'xpath:/html/body/div[2]/div/div/select[1]' by index 1.</msg>
+<status status="PASS" starttime="20200313 15:00:17.852" endtime="20200313 15:00:19.834"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[2]/table/tbody/tr[3]/td[4]/a</arg>
+</arguments>
+<msg timestamp="20200313 15:00:19.835" level="INFO">Clicking link 'xpath:/html/body/div[2]/table/tbody/tr[3]/td[4]/a'.</msg>
+<status status="PASS" starttime="20200313 15:00:19.835" endtime="20200313 15:00:21.075"></status>
+</kw>
+<status status="PASS" starttime="20200313 15:00:08.253" endtime="20200313 15:00:21.075"></status>
+</kw>
+<kw name="บุตรคนที่2" library="aksorn_resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>young_name2</arg>
+<arg>r</arg>
+</arguments>
+<msg timestamp="20200313 15:00:21.076" level="INFO">Typing text 'r' into text field 'young_name2'.</msg>
+<status status="PASS" starttime="20200313 15:00:21.076" endtime="20200313 15:00:22.711"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>young_lastname2</arg>
+<arg>e</arg>
+</arguments>
+<msg timestamp="20200313 15:00:22.711" level="INFO">Typing text 'e' into text field 'young_lastname2'.</msg>
+<status status="PASS" starttime="20200313 15:00:22.711" endtime="20200313 15:00:22.870"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>young_born_2</arg>
+</arguments>
+<msg timestamp="20200313 15:00:22.871" level="INFO">Clicking element 'young_born_2'.</msg>
+<status status="PASS" starttime="20200313 15:00:22.871" endtime="20200313 15:00:26.232"></status>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[2]/div/div/select[2]</arg>
+<arg>40</arg>
+</arguments>
+<msg timestamp="20200313 15:00:26.232" level="INFO">Selecting options from selection list 'xpath:/html/body/div[2]/div/div/select[2]' by index 40.</msg>
+<status status="PASS" starttime="20200313 15:00:26.232" endtime="20200313 15:00:30.189"></status>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[2]/div/div/select[1]</arg>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200313 15:00:30.189" level="INFO">Selecting options from selection list 'xpath:/html/body/div[2]/div/div/select[1]' by index 3.</msg>
+<status status="PASS" starttime="20200313 15:00:30.189" endtime="20200313 15:00:32.202"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[2]/table/tbody/tr[4]/td[4]/a</arg>
+</arguments>
+<msg timestamp="20200313 15:00:32.202" level="INFO">Clicking link 'xpath:/html/body/div[2]/table/tbody/tr[4]/td[4]/a'.</msg>
+<status status="PASS" starttime="20200313 15:00:32.202" endtime="20200313 15:00:33.273"></status>
+</kw>
+<status status="PASS" starttime="20200313 15:00:21.075" endtime="20200313 15:00:33.273"></status>
+</kw>
+<kw name="ต่อไป-หน้าที่2" library="aksorn_resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[1]/div[3]/div/div/form/div/div/div[3]/div[3]/div/div[2]</arg>
+</arguments>
+<msg timestamp="20200313 15:00:33.273" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[3]/div/div/form/div/div/div[3]/div[3]/div/div[2]'.</msg>
+<status status="PASS" starttime="20200313 15:00:33.273" endtime="20200313 15:00:34.865"></status>
+</kw>
+<status status="PASS" starttime="20200313 15:00:33.273" endtime="20200313 15:00:34.865"></status>
+</kw>
+<status status="PASS" starttime="20200313 14:59:47.454" endtime="20200313 15:00:34.865" critical="yes"></status>
+</test>
+<test id="s1-s1-t4" name="หน้าที่3">
+<kw name="บิดา" library="aksorn_resource">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20200313 15:00:34.867" endtime="20200313 15:00:34.867"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>father_name</arg>
+<arg>k</arg>
+</arguments>
+<msg timestamp="20200313 15:00:34.867" level="INFO">Typing text 'k' into text field 'father_name'.</msg>
+<status status="PASS" starttime="20200313 15:00:34.867" endtime="20200313 15:00:38.698"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>father_lastname</arg>
+<arg>kt</arg>
+</arguments>
+<msg timestamp="20200313 15:00:38.698" level="INFO">Typing text 'kt' into text field 'father_lastname'.</msg>
+<status status="PASS" starttime="20200313 15:00:38.698" endtime="20200313 15:00:42.307"></status>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>father_birth_date</arg>
+<arg>1970</arg>
+</arguments>
+<msg timestamp="20200313 15:00:42.307" level="INFO">Selecting options from selection list 'father_birth_date' by value 1970.</msg>
+<status status="PASS" starttime="20200313 15:00:42.307" endtime="20200313 15:00:49.364"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>0</arg>
+</arguments>
+<status status="PASS" starttime="20200313 15:00:49.364" endtime="20200313 15:00:49.364"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>father_occupation</arg>
+<arg>home</arg>
+</arguments>
+<msg timestamp="20200313 15:00:49.364" level="INFO">Typing text 'home' into text field 'father_occupation'.</msg>
+<status status="PASS" starttime="20200313 15:00:49.364" endtime="20200313 15:00:49.496"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>father_workplace</arg>
+<arg>home</arg>
+</arguments>
+<msg timestamp="20200313 15:00:49.496" level="INFO">Typing text 'home' into text field 'father_workplace'.</msg>
+<status status="PASS" starttime="20200313 15:00:49.496" endtime="20200313 15:00:51.461"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>father_telephone</arg>
+<arg>12345678</arg>
+</arguments>
+<msg timestamp="20200313 15:00:51.462" level="INFO">Typing text '12345678' into text field 'father_telephone'.</msg>
+<status status="PASS" starttime="20200313 15:00:51.461" endtime="20200313 15:00:53.197"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>father_mobile</arg>
+<arg>123456789</arg>
+</arguments>
+<msg timestamp="20200313 15:00:53.198" level="INFO">Typing text '123456789' into text field 'father_mobile'.</msg>
+<status status="PASS" starttime="20200313 15:00:53.198" endtime="20200313 15:00:56.400"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>father_address</arg>
+<arg>house</arg>
+</arguments>
+<msg timestamp="20200313 15:00:56.401" level="INFO">Typing text 'house' into text field 'father_address'.</msg>
+<status status="PASS" starttime="20200313 15:00:56.400" endtime="20200313 15:00:56.545"></status>
+</kw>
+<status status="PASS" starttime="20200313 15:00:34.867" endtime="20200313 15:00:56.545"></status>
+</kw>
+<kw name="มารดา" library="aksorn_resource">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20200313 15:00:56.546" endtime="20200313 15:00:56.546"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mother_name</arg>
+<arg>k</arg>
+</arguments>
+<msg timestamp="20200313 15:00:56.547" level="INFO">Typing text 'k' into text field 'mother_name'.</msg>
+<status status="PASS" starttime="20200313 15:00:56.547" endtime="20200313 15:01:01.243"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mother_lastname</arg>
+<arg>kt</arg>
+</arguments>
+<msg timestamp="20200313 15:01:01.243" level="INFO">Typing text 'kt' into text field 'mother_lastname'.</msg>
+<status status="PASS" starttime="20200313 15:01:01.243" endtime="20200313 15:01:05.008"></status>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>mother_birth_date</arg>
+<arg>1970</arg>
+</arguments>
+<msg timestamp="20200313 15:01:05.008" level="INFO">Selecting options from selection list 'mother_birth_date' by value 1970.</msg>
+<status status="PASS" starttime="20200313 15:01:05.008" endtime="20200313 15:01:12.087"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>0</arg>
+</arguments>
+<status status="PASS" starttime="20200313 15:01:12.087" endtime="20200313 15:01:12.087"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mother_occupation</arg>
+<arg>home</arg>
+</arguments>
+<msg timestamp="20200313 15:01:12.087" level="INFO">Typing text 'home' into text field 'mother_occupation'.</msg>
+<status status="PASS" starttime="20200313 15:01:12.087" endtime="20200313 15:01:12.234"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mother_workplace</arg>
+<arg>home</arg>
+</arguments>
+<msg timestamp="20200313 15:01:12.234" level="INFO">Typing text 'home' into text field 'mother_workplace'.</msg>
+<status status="PASS" starttime="20200313 15:01:12.234" endtime="20200313 15:01:15.445"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mother_telephone</arg>
+<arg>12345678</arg>
+</arguments>
+<msg timestamp="20200313 15:01:15.445" level="INFO">Typing text '12345678' into text field 'mother_telephone'.</msg>
+<status status="PASS" starttime="20200313 15:01:15.445" endtime="20200313 15:01:15.605"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mother_mobile</arg>
+<arg>123456789</arg>
+</arguments>
+<msg timestamp="20200313 15:01:15.605" level="INFO">Typing text '123456789' into text field 'mother_mobile'.</msg>
+<status status="PASS" starttime="20200313 15:01:15.605" endtime="20200313 15:01:17.320"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mother_address</arg>
+<arg>house</arg>
+</arguments>
+<msg timestamp="20200313 15:01:17.320" level="INFO">Typing text 'house' into text field 'mother_address'.</msg>
+<status status="PASS" starttime="20200313 15:01:17.320" endtime="20200313 15:01:18.976"></status>
+</kw>
+<status status="PASS" starttime="20200313 15:00:56.546" endtime="20200313 15:01:18.976"></status>
+</kw>
+<kw name="พี่น้อง" library="aksorn_resource">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20200313 15:01:18.977" endtime="20200313 15:01:18.977"></status>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>count_family</arg>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200313 15:01:18.977" level="INFO">Selecting options from selection list 'count_family' by value 2.</msg>
+<status status="PASS" starttime="20200313 15:01:18.977" endtime="20200313 15:01:26.833"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>number_of_your</arg>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200313 15:01:26.833" level="INFO">Typing text '2' into text field 'number_of_your'.</msg>
+<status status="PASS" starttime="20200313 15:01:26.833" endtime="20200313 15:01:29.940"></status>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[1]/div[3]/div/div/form/div/div/div[4]/div[7]/div/div[2]/div/div[1]/div/select</arg>
+<arg>นางสาว / Ms.</arg>
+</arguments>
+<msg timestamp="20200313 15:01:29.940" level="INFO">Selecting options from selection list 'xpath:/html/body/div[1]/div[3]/div/div/form/div/div/div[4]/div[7]/div/div[2]/div/div[1]/div/select' by value นางสาว / Ms..</msg>
+<status status="PASS" starttime="20200313 15:01:29.940" endtime="20200313 15:01:38.167"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>brethren_name_1</arg>
+<arg>i</arg>
+</arguments>
+<msg timestamp="20200313 15:01:38.167" level="INFO">Typing text 'i' into text field 'brethren_name_1'.</msg>
+<status status="PASS" starttime="20200313 15:01:38.167" endtime="20200313 15:01:41.238"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>brethren_lastname_1</arg>
+<arg>l</arg>
+</arguments>
+<msg timestamp="20200313 15:01:41.238" level="INFO">Typing text 'l' into text field 'brethren_lastname_1'.</msg>
+<status status="PASS" starttime="20200313 15:01:41.238" endtime="20200313 15:01:45.147"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>brethren_age_1</arg>
+<arg>22</arg>
+</arguments>
+<msg timestamp="20200313 15:01:45.147" level="INFO">Typing text '22' into text field 'brethren_age_1'.</msg>
+<status status="PASS" starttime="20200313 15:01:45.147" endtime="20200313 15:01:48.958"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>brethren_study_1</arg>
+<arg>py</arg>
+</arguments>
+<msg timestamp="20200313 15:01:48.958" level="INFO">Typing text 'py' into text field 'brethren_study_1'.</msg>
+<status status="PASS" starttime="20200313 15:01:48.958" endtime="20200313 15:01:52.630"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>brethren_school_1</arg>
+<arg>yy</arg>
+</arguments>
+<msg timestamp="20200313 15:01:52.630" level="INFO">Typing text 'yy' into text field 'brethren_school_1'.</msg>
+<status status="PASS" starttime="20200313 15:01:52.630" endtime="20200313 15:01:56.536"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>brethren_position_1</arg>
+<arg>good</arg>
+</arguments>
+<msg timestamp="20200313 15:01:56.536" level="INFO">Typing text 'good' into text field 'brethren_position_1'.</msg>
+<status status="PASS" starttime="20200313 15:01:56.536" endtime="20200313 15:02:00.436"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>brethren_workplace_1</arg>
+<arg>nooo</arg>
+</arguments>
+<msg timestamp="20200313 15:02:00.436" level="INFO">Typing text 'nooo' into text field 'brethren_workplace_1'.</msg>
+<status status="PASS" starttime="20200313 15:02:00.436" endtime="20200313 15:02:04.184"></status>
+</kw>
+<status status="PASS" starttime="20200313 15:01:18.976" endtime="20200313 15:02:04.184"></status>
+</kw>
+<kw name="ต่อไป-หน้าที่3" library="aksorn_resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[1]/div[3]/div/div/form/div/div/div[4]/div[9]/div/div[2]</arg>
+</arguments>
+<msg timestamp="20200313 15:02:04.185" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[3]/div/div/form/div/div/div[4]/div[9]/div/div[2]'.</msg>
+<status status="PASS" starttime="20200313 15:02:04.185" endtime="20200313 15:02:09.400"></status>
+</kw>
+<status status="PASS" starttime="20200313 15:02:04.184" endtime="20200313 15:02:09.400"></status>
+</kw>
+<status status="PASS" starttime="20200313 15:00:34.866" endtime="20200313 15:02:09.400" critical="yes"></status>
+</test>
+<test id="s1-s1-t5" name="หน้าที่4">
+<kw name="ประวัติการศึกษา" library="aksorn_resource">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>0</arg>
+</arguments>
+<status status="PASS" starttime="20200313 15:02:09.402" endtime="20200313 15:02:09.402"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[1]/div[3]/div/div/form/div/div/div[5]/div[1]/div[2]/div/div[1]/div[1]/div/input</arg>
+<arg>height</arg>
+</arguments>
+<msg timestamp="20200313 15:02:09.402" level="INFO">Typing text 'height' into text field 'xpath:/html/body/div[1]/div[3]/div/div/form/div/div/div[5]/div[1]/div[2]/div/div[1]/div[1]/div/input'.</msg>
+<status status="PASS" starttime="20200313 15:02:09.402" endtime="20200313 15:02:09.546"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[1]/div[3]/div/div/form/div/div/div[5]/div[1]/div[2]/div/div[1]/div[2]/div/input</arg>
+<arg>gggg</arg>
+</arguments>
+<msg timestamp="20200313 15:02:09.547" level="INFO">Typing text 'gggg' into text field 'xpath:/html/body/div[1]/div[3]/div/div/form/div/div/div[5]/div[1]/div[2]/div/div[1]/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20200313 15:02:09.546" endtime="20200313 15:02:11.302"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[1]/div[3]/div/div/form/div/div/div[5]/div[1]/div[2]/div/div[2]/div[1]/div/input</arg>
+<arg>jjj</arg>
+</arguments>
+<msg timestamp="20200313 15:02:11.303" level="INFO">Typing text 'jjj' into text field 'xpath:/html/body/div[1]/div[3]/div/div/form/div/div/div[5]/div[1]/div[2]/div/div[2]/div[1]/div/input'.</msg>
+<status status="PASS" starttime="20200313 15:02:11.303" endtime="20200313 15:02:13.250"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[1]/div[3]/div/div/form/div/div/div[5]/div[1]/div[2]/div/div[2]/div[2]/div/input</arg>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200313 15:02:13.250" level="INFO">Typing text '5' into text field 'xpath:/html/body/div[1]/div[3]/div/div/form/div/div/div[5]/div[1]/div[2]/div/div[2]/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20200313 15:02:13.250" endtime="20200313 15:02:16.834"></status>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>start_date_1</arg>
+<arg>2010</arg>
+</arguments>
+<msg timestamp="20200313 15:02:16.835" level="INFO">Selecting options from selection list 'start_date_1' by value 2010.</msg>
+<status status="PASS" starttime="20200313 15:02:16.834" endtime="20200313 15:02:17.389"></status>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>end_date_1</arg>
+<arg>2013</arg>
+</arguments>
+<msg timestamp="20200313 15:02:17.390" level="INFO">Selecting options from selection list 'end_date_1' by value 2013.</msg>
+<status status="PASS" starttime="20200313 15:02:17.390" endtime="20200313 15:02:17.961"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[1]/div[3]/div/div/form/div/div/div[5]/div[1]/div[2]/div/div[3]/div/div/input</arg>
+<arg>pppp</arg>
+</arguments>
+<msg timestamp="20200313 15:02:17.961" level="INFO">Typing text 'pppp' into text field 'xpath:/html/body/div[1]/div[3]/div/div/form/div/div/div[5]/div[1]/div[2]/div/div[3]/div/div/input'.</msg>
+<status status="PASS" starttime="20200313 15:02:17.961" endtime="20200313 15:02:18.112"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[1]/div[3]/div/div/form/div/div/div[5]/div[2]/div/div[2]/button</arg>
+</arguments>
+<msg timestamp="20200313 15:02:18.112" level="INFO">Clicking button 'xpath:/html/body/div[1]/div[3]/div/div/form/div/div/div[5]/div[2]/div/div[2]/button'.</msg>
+<status status="PASS" starttime="20200313 15:02:18.112" endtime="20200313 15:02:22.746"></status>
+</kw>
+<status status="PASS" starttime="20200313 15:02:09.402" endtime="20200313 15:02:22.746"></status>
+</kw>
+<kw name="ประวัติการทำงาน" library="aksorn_resource">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20200313 15:02:22.747" endtime="20200313 15:02:22.747"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>start_date_work_2</arg>
+</arguments>
+<msg timestamp="20200313 15:02:22.747" level="INFO">Clicking element 'start_date_work_2'.</msg>
+<status status="PASS" starttime="20200313 15:02:22.747" endtime="20200313 15:02:28.758"></status>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[2]/div[1]/div/select[2]</arg>
+<arg>50</arg>
+</arguments>
+<msg timestamp="20200313 15:02:28.758" level="INFO">Selecting options from selection list 'xpath:/html/body/div[2]/div[1]/div/select[2]' by index 50.</msg>
+<status status="PASS" starttime="20200313 15:02:28.758" endtime="20200313 15:04:28.188"></status>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[2]/div[1]/div/select[1]</arg>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200313 15:04:28.188" level="INFO">Selecting options from selection list 'xpath:/html/body/div[2]/div[1]/div/select[1]' by index 2.</msg>
+<status status="PASS" starttime="20200313 15:04:28.188" endtime="20200313 15:04:46.433"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>end_date_work_2</arg>
+</arguments>
+<msg timestamp="20200313 15:04:46.433" level="INFO">Clicking element 'end_date_work_2'.</msg>
+<status status="PASS" starttime="20200313 15:04:46.433" endtime="20200313 15:04:52.468"></status>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[2]/div[1]/div/select[2]</arg>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200313 15:04:52.468" level="INFO">Selecting options from selection list 'xpath:/html/body/div[2]/div[1]/div/select[2]' by index 5.</msg>
+<status status="PASS" starttime="20200313 15:04:52.468" endtime="20200313 15:05:20.585"></status>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[2]/div[1]/div/select[1]</arg>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200313 15:05:20.585" level="INFO">Selecting options from selection list 'xpath:/html/body/div[2]/div[1]/div/select[1]' by index 2.</msg>
+<status status="PASS" starttime="20200313 15:05:20.585" endtime="20200313 15:05:38.803"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>0</arg>
+</arguments>
+<status status="PASS" starttime="20200313 15:05:38.803" endtime="20200313 15:05:38.803"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:company_name[]</arg>
+<arg>pppp</arg>
+</arguments>
+<msg timestamp="20200313 15:05:38.803" level="INFO">Typing text 'pppp' into text field 'name:company_name[]'.</msg>
+<status status="PASS" starttime="20200313 15:05:38.803" endtime="20200313 15:05:38.945"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:business_type[]</arg>
+<arg>pppp</arg>
+</arguments>
+<msg timestamp="20200313 15:05:38.945" level="INFO">Typing text 'pppp' into text field 'name:business_type[]'.</msg>
+<status status="PASS" starttime="20200313 15:05:38.945" endtime="20200313 15:05:42.754"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:position[]</arg>
+<arg>pppp</arg>
+</arguments>
+<msg timestamp="20200313 15:05:42.755" level="INFO">Typing text 'pppp' into text field 'name:position[]'.</msg>
+<status status="PASS" starttime="20200313 15:05:42.754" endtime="20200313 15:05:44.709"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:role[]</arg>
+<arg>pppp</arg>
+</arguments>
+<msg timestamp="20200313 15:05:44.709" level="INFO">Typing text 'pppp' into text field 'name:role[]'.</msg>
+<status status="PASS" starttime="20200313 15:05:44.709" endtime="20200313 15:05:44.864"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>latest_salary_2</arg>
+<arg>123456</arg>
+</arguments>
+<msg timestamp="20200313 15:05:44.864" level="INFO">Typing text '123456' into text field 'latest_salary_2'.</msg>
+<status status="PASS" starttime="20200313 15:05:44.864" endtime="20200313 15:05:47.009"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:reasons_leaving[]</arg>
+<arg>123456</arg>
+</arguments>
+<msg timestamp="20200313 15:05:47.010" level="INFO">Typing text '123456' into text field 'name:reasons_leaving[]'.</msg>
+<status status="PASS" starttime="20200313 15:05:47.010" endtime="20200313 15:05:49.142"></status>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>date_training_1</arg>
+<arg>1970</arg>
+</arguments>
+<msg timestamp="20200313 15:05:49.142" level="INFO">Selecting options from selection list 'date_training_1' by value 1970.</msg>
+<status status="PASS" starttime="20200313 15:05:49.142" endtime="20200313 15:05:51.748"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:training_subject[]</arg>
+<arg>asjiodas</arg>
+</arguments>
+<msg timestamp="20200313 15:05:51.748" level="INFO">Typing text 'asjiodas' into text field 'name:training_subject[]'.</msg>
+<status status="PASS" starttime="20200313 15:05:51.748" endtime="20200313 15:05:51.972"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:training_place[]</arg>
+<arg>asjiodas</arg>
+</arguments>
+<msg timestamp="20200313 15:05:51.972" level="INFO">Typing text 'asjiodas' into text field 'name:training_place[]'.</msg>
+<status status="PASS" starttime="20200313 15:05:51.972" endtime="20200313 15:05:53.948"></status>
+</kw>
+<status status="PASS" starttime="20200313 15:02:22.747" endtime="20200313 15:05:53.948"></status>
+</kw>
+<kw name="ต่อไป-หน้าที่4" library="aksorn_resource">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn_save_form_work</arg>
+</arguments>
+<msg timestamp="20200313 15:05:53.949" level="INFO">Clicking button 'btn_save_form_work'.</msg>
+<status status="PASS" starttime="20200313 15:05:53.949" endtime="20200313 15:05:57.913"></status>
+</kw>
+<status status="PASS" starttime="20200313 15:05:53.949" endtime="20200313 15:05:57.913"></status>
+</kw>
+<status status="PASS" starttime="20200313 15:02:09.401" endtime="20200313 15:05:57.913" critical="yes"></status>
+</test>
+<test id="s1-s1-t6" name="หน้าที่5">
+<kw name="ทักษะทางด้านภาษา" library="aksorn_resource">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20200313 15:05:57.915" endtime="20200313 15:05:57.916"></status>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>form-3-select</arg>
+<arg>ดี</arg>
+</arguments>
+<msg timestamp="20200313 15:05:57.916" level="INFO">Selecting options from selection list 'form-3-select' by value ดี.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200313 15:06:05.434" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200313 15:06:04.229" endtime="20200313 15:06:05.434"></status>
+</kw>
+<msg timestamp="20200313 15:06:05.437" level="FAIL">ElementClickInterceptedException: Message: Element &lt;select id="form-3-select" class="custom-select w-100 required" name="level_eng"&gt; is not clickable at point (501,54) because another element &lt;div class="container-fluid flex_row-between middle-item p-b-6"&gt; obscures it
+</msg>
+<status status="FAIL" starttime="20200313 15:05:57.916" endtime="20200313 15:06:05.437"></status>
+</kw>
+<status status="FAIL" starttime="20200313 15:05:57.915" endtime="20200313 15:06:05.437"></status>
+</kw>
+<status status="FAIL" starttime="20200313 15:05:57.914" endtime="20200313 15:06:05.438" critical="yes">ElementClickInterceptedException: Message: Element &lt;select id="form-3-select" class="custom-select w-100 required" name="level_eng"&gt; is not clickable at point (501,54) because another element &lt;div class="container-fluid flex_row-between middle-item p-b-6"&gt; obscures it
+</status>
+</test>
+<test id="s1-s1-t7" name="จบการทดสอบ">
+<kw name="ปิดเว็ป" library="aksorn_resource">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200313 15:06:05.440" endtime="20200313 15:06:06.957"></status>
+</kw>
+<status status="PASS" starttime="20200313 15:06:05.440" endtime="20200313 15:06:06.957"></status>
+</kw>
+<status status="PASS" starttime="20200313 15:06:05.439" endtime="20200313 15:06:06.957" critical="yes"></status>
+</test>
+<doc>A test suite with a single test for valid login.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="FAIL" starttime="20200313 14:59:26.226" endtime="20200313 15:06:06.959"></status>
+</suite>
+<status status="FAIL" starttime="20200313 14:59:26.206" endtime="20200313 15:06:06.963"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="1">Critical Tests</stat>
+<stat pass="6" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="6" fail="1" id="s1" name="Aksorn">Aksorn</stat>
+<stat pass="6" fail="1" id="s1-s1" name="Test Form">Aksorn.Test Form</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
